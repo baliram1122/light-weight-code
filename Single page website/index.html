@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- header section -->
+    <div id="hero-img">
+    <div class="nav-bar">
+        <div class="logo">
+            <h2>logo</h2>
+        </div>
+        <nav>
+            <div class="navlinks" id="nav-Links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-block">About</a></li>
+                    <li><a href="#contact-block">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </div>
+        <div id="hero-center">
+            <div id="hero-head"><h1>Welcome to name</h1></div>
+            <div id="hero-text"><p>Lorem ipsum dolor quibusdam consequatur repellendus ea, dolorem atque.</p></div>
+            <button id="hero-button">Let's go</button>
+        </div>
+    </div>
+
+
+    <!-- cards/features section -->
+
+    <div id="card-container">
+        <div id="cards-head"><h1>Features of name</h1></div>
+        <div id="cards">
+            <div class="cards card1"><i class="fa-solid fa-truck-fast"></i><h3>Feature 1</h3><p>Lorem ipsum dolor quibusdam consequatur repellendus ea, dolorem atque.</p></div>
+            <div class="cards card2"><i class="fa-solid fa-phone"></i><h3>Feature 2</h3><p>Lorem ipsum dolor quibusdam consequatur repellendus ea, dolorem atque.</p></div>
+            <div class="cards card3"><i class="fa-solid fa-recycle"></i><h3>Feature 3</h3><p>Lorem ipsum dolor quibusdam consequatur repellendus ea, dolorem atque.</p></div>
+        </div>
+    </div>
+
+<!-- 
+    <div id="video-back">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VeA9OyVEH4A?rel=0autoplay=1&loop=1&controls=0&mute=1&playinline=1&showinfo=0&autohide=1" title="YouTube video player" frameborder="0"></iframe>
+    </div> -->
+
+
+    <!-- quote section -->
+    <div id="quote-block">
+        <div id="overlay">
+            <div id="quote">"quote section"</div>
+        </div>
+    </div>
+
+
+    <!-- about section -->
+    <div id="about-block">
+        <div id="about-text"><h1>About Us</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sit cumque molestias commodi possimus modi nostrum quia optio sed animi placeat pariatur dicta neque incidunt minus, reprehenderit consectetur aliquid dolorem?</p></div>
+        <div id="about-img"><img src="about us.jpg" alt="man using computer"></div>
+
+    </div>
+
+    <!-- contact section -->
+
+    <div id="contact-block">
+        <a href="#contact"></a>
+        <div class="info-block">
+            <div><h3>Location</h3></div>
+            <div><p>92 Edgemont Street Miami, FL 33142</p></div>
+        <div class="icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        </div>
+        <div class="form-block">
+
+            <form action="">
+                <h1>Reach out to us</h1>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+
+                    <input type="email" id="mail" name="mail" placeholder="Enter your email">
+                    
+                    <textarea cols="22" rows="4" type="text" id="query" name="query" placeholder="Enter your query"></textarea>
+                    
+                    <input type="button" value="submit" id="form-btn">
+            </form>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <div id="footer">
+        <div class="icons">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div class="copy-line"><p>©Copyrights name | All Rights Reserved</p></div>
+    </div>
+
+
+
+
+    <script>
+
+        var navLinks = document.getElementById("nav-Links");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+
+        }
+    
+    
+    </script>
+    
+
+
+</body>
+</html>
