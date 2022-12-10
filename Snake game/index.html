@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #canvas1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            z-index: -1;
+        }
+
+        .game-over {
+            visibility: hidden;
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+            background-color: white;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            font-size: 1.5em;
+            border-radius: 3px;
+        }
+
+        .restart {
+            background-color: orangered;
+            color: white;
+            padding: 12px 20px;
+            font-size: 0.8em;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+
+        .game-over.on {
+            visibility: visible;
+            animation: 1s animGo linear;
+        }
+
+
+        @keyframes animGo {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #score {
+            background-color: dodgerblue;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 65px;
+            font-size: 1.5em;
+            line-height: 65px;
+            text-align: center;
+            color: white;
+            z-index: -2;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="game-over">
+        <h1>Game Over</h1>
+        <button class="restart">Restart</button>
+    </div>
+
+    <canvas id="canvas1"></canvas>
+
+    <div id="score">Score: 0</div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
