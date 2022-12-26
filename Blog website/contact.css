@@ -1,0 +1,159 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(1, 0, 0, 0.1)), url("contactback1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+
+/* navbar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 30px;
+    color: white;
+    padding: 20px 0px;
+}
+
+
+.navlinks ul li {
+    font-size: 18px;
+    list-style-type: none;
+    padding: 10px 18px;
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.navlinks ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navlinks ul li a:hover {
+    border-bottom: 2px solid dodgerblue;
+}
+
+nav .fa {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+    color: white;
+}
+
+.fa-brands {
+    font-size: 1.2em;
+    padding: 5px;
+    transition: 0.3s linear;
+}
+
+.fa-brands:hover {
+    transform: translateY(-10px);
+}
+
+#blur-back {
+    width: 500px;
+    right: -170px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    height: 500px;
+    margin-top: 30px;
+}
+
+#form-container {
+    width: 500px;
+    right: -170px;
+    margin-top: 30px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+}
+
+
+#form-container input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    color: white;
+    outline: none;
+    border-radius: 0;
+}
+
+#form-container textarea {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    color: white;
+    outline: none;
+    border-radius: 0;
+}
+
+#form-container input:focus {
+    outline: none;
+}
+
+
+
+@media screen and (max-width:768px)
+{
+    .navlinks {
+        background: dodgerblue;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        text-align: left;
+        z-index: 2;
+        width: 200px;
+        transition: 0.5s;
+    }
+
+    .navlinks ul li {
+        padding:20px 5px;
+        display: block;
+    }
+
+    .navlinks ul {
+        padding: 30px;
+    }
+
+    nav .fa {
+        display: block;
+        color: white;
+        margin: 10px;
+        cursor: pointer;
+        font-size: 22px;
+    }
+
+}
+
+
+@media screen and (max-width:954px) {
+    #form-container {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 450px;
+        width: 100%;
+    }
+    #blur-back {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 450px;
+    }
+}
