@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="posts.css" />
+    <link rel="stylesheet" href="css\bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-bar d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <h2>techInfo</h2>
+            </div>
+            <nav>
+                <div class="navlinks" id="nav-Links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main class="container d-flex">
+        <div class="container mt-5">
+            <h1 id="head">What is Neuralink ?</h1>
+            <h5 class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
+            <img src="postimg2.jpg" alt="">
+            <article class="my-5">
+                <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+                    obcaecati quam ipsam aliquid at ratione quas aperiam, quia, beatae maiores inventore corporis
+                    officiis distinctio consectetur culpa laboriosam quisquam molestias. Reiciendis? consectetur
+                    adipisicing elit. Earum laudantium est pariatur error voluptatibus! Distinctio, vero qui harum
+                    consectetur obcaecati veniam perspiciatis voluptatem odio provident fugit error ad, recusandae quia.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, numquam sint impedit dolor rerum
+                    sequi sunt delectus blanditiis necessitatibus veniam error nobis unde vero dolores id aliquid
+                    corrupti minus fugiat? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat provident
+                    illo dolorum nisi ipsa at ullam. Incidunt cupiditate blanditiis perferendis nam, dolorum quae
+                    accusantium? Sequi necessitatibus labore tempore ducimus laudantium?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum laudantium est pariatur error
+                    voluptatibus! Distinctio, vero qui harum consectetur obcaecati veniam perspiciatis voluptatem odio
+                    provident fugit error ad, Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi enim
+                    porro, aliquid qui, obcaecati quae fuga est voluptatibus ipsum hic odit minus ullam neque a
+                    assumenda natus voluptatem, nam distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod vero commodi quo voluptatum? Id, quod sed aliquam nostrum, nisi eos omnis voluptatibus ipsam
+                    quisquam accusamus nam tempore explicabo, tenetur dolorum! recusandae quia.</p>
+            </article>
+        </div>
+
+        <!-- recent posts -->
+        <div class="container d-flex justify-content-start flex-column align-items-start mb-4" id="recent-post">
+                <h2 class="display-5 my-3">Recent Posts</h2>
+
+                <div class="d-flex justify-content-between  rounded-3 p-1" style="height: 110px; max-width: 400px;">
+                    <img src="postimg9.jpg" alt="" class="float-left me-3" style="max-width: 100px; height: 100px;">
+                    <div>
+                        <h5 style="font-size: 16px;">Best water resistant laptop</h5>
+                        <p style="font-size: small;" >Lorem ipsum dolor sit ametillo. Vel! sit ametillo. Vel! <a href="post1.html" style="text-decoration: none;">Read more</a> </p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between  rounded-3 p-1 my-2" style="height: 100px; max-width: 400px;">
+                    <img src="postimg4.jfif" alt="" class="float-left me-3" style="max-width: 100px; height: 90px;">
+                    <div>
+                        <h5 style="font-size: 16px;">what is datascience?</h5>
+                        <p style="font-size: small;">Lorem ipsum dolor sit ametillo. Vel! sit ametillo. Vel! <a href="post3.html" style="text-decoration: none;">Read more</a></p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between  rounded-3 p-1" style="height: 100px; max-width: 400px;">
+                    <img src="postimg5.jpg" alt="" class="float-left me-3" style="max-width: 100px; height: 90px;">
+                    <div>
+                        <h5 style="font-size: 16px;">what is 3d printing?</h5>
+                        <p style="font-size: small;">Lorem ipsum dolor sit ametillo. Vel! sit ametillo. Vel! <a href="" style="text-decoration: none;">Read more</a></p>
+                    </div>
+                </div>
+
+        </div>
+
+    </main>
+
+
+
+
+
+    <div class="container-fluid bg-dark">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-5 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-1 mb-md-0 text-muted">© 2022 techInfo.com</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-3">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("nav-Links");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+
+        }
+    </script>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

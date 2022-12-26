@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css"/>
+    <link rel="stylesheet" href="css\bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+
+    <header class="position-relative">
+
+        <!-- nav Links -->
+        <div class="nav-bar">
+          <div class="logo">
+              <h2>techInfo</h2>
+          </div>
+          <nav>
+              <div class="navlinks" id="nav-Links">
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="blog.html">Blogs</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars" onclick="showMenu()"></i>
+          </nav>
+      </div>
+    </header>
+
+    <div class="top-50 position-absolute rounded-3 translate-middle" id="blur-back"></div>
+
+    <div class="text-light top-50 translate-middle position-absolute rounded-3" id="form-container">
+        <form class="p-3 ">
+            <h2 class="display-5 text-center">Get in touch</h2>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <label for="email">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                <label for="phone">Phone</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <textarea name="message" class="form-control" placeholder="Enter a message" id="message" cols="10" style="height: 100px;"></textarea>
+                <label for="message" class="form-label">Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("nav-Links");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+    
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+
+        }
+    </script>
+
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
