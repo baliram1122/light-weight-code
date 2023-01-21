@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+
+  <nav class="navbar navbar-expand-lg " id="home">
+    <div class="container-fluid mx-lg-5">
+      <a class="navbar-brand" href="#">Ace<span class="text-danger fs-2">Hotel</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hotel-pictures">Pictures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="rooms.html">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+          <li class="form-check form-switch nav-item mt-lg-1 ms-lg-2 fs-4" id="dark-btn">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero-section -->
+
+  <section class="section-padding hidden" id="info">
+    <div id="sun" class="abc"></div>
+    <div id="moon" class="hide"></div>
+    <div class="container-fluid">
+      <div class="row align-items-center px-lg-5 px-md-5" id="hero-row">
+        <div class="col-md-7 col-sm-12 text pt-lg-5">
+          <h1>Stay in Style at Our Hotel</h1>
+          <p class="my-4 lh-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quod harum, repellat, eaque
+            doloribus eveniet molestias deserunt in nemo sunt saepe laboriosam distinctio vel vero consequatur
+            doloremque odit. Placeat, optio.</p>
+          <p><a href="#services" class="btn btn-primary btn-md">Get Started</a></p>
+        </div>
+        <div class="col-md-5  col-12" id="hero-img" >
+          <img src="hotel-img2.jpg" class="image-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- services -->
+
+  <section class="section-padding hidden" id="services">
+    <div class="container">
+      <div class="row py-5 text-center" id="heading">
+        <h1>Our Services</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed id dolorum blanditiis vitae.</p>
+      </div>
+      <div class="row mx-auto" id="service-row">
+        <div class="col-12 col-md-12 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body text-center text-dark">
+              <i class="fas fa-4x fa-hotel text-primary mb-3 sr-icon-1"></i>
+              <h5 class="card-title">Room Reservations</h5>
+              <p class="card-text">Book rooms online and view real-time availability</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body text-center text-dark">
+              <i class="fas fa-4x fa-calendar-check text-primary mb-3 sr-icon-2"></i>
+              <h5 class="card-title">Event Planning</h5>
+              <p class="card-text">Plan events and meetings with the hotel's help</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-4">
+          <div class="card">
+            <div class="card-body text-center text-dark">
+              <i class="fas fa-4x fa-concierge-bell text-primary mb-3 sr-icon-4"></i>
+              <h5 class="card-title">concierge Services</h5>
+              <p class="card-text">Get help with activities, transportation and restaurant reservations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- hotel pics -->
+ 
+  <section class="padding-section hidden" id="hotel-pictures">
+    <h1 class="text-center mb-5">Sumptuous surroundings, unforgettable stays</h1>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="welcomhotel-bhubaneswar.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>Five star rated</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="swimingpool.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>Luxerious swimming pool</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="bedroom.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>Luxurious Bedrooms</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- rooms -->
+
+  <section class="section-padding hidden" id="packages">
+    <div class="container">
+      <div class="row py-5 text-center" id="heading">
+        <h1>Our Rooms</h1>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4" id="package-row">
+        <div class="col">
+          <div class="card h-100">
+            <img src="bedroom5.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-dark">
+              <h5 class="card-title">Standard Bedroom</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit at quibusdam vero corporis optio praesentium, temporibus quis nam nesciunt ea ab nobis harum incidunt architecto iste eius molestiae quas. Voluptatem.</p>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="bedroom.avif" class="card-img-top" alt="...">
+            <div class="card-body text-dark">
+              <h5 class="card-title">Delux Bedroom</h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam dicta pariatur reiciendis iure consectetur, fugit ratione velit vel quae nam illum veniam eveniet sunt qui quisquam quidem neque officiis vero.</p>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="bedroom7.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-dark">
+              <h5 class="card-title"> Minimalist Bedroom</h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi quisquam optio, tenetur quam laboriosam ea nihil facere in delectus modi ex fugiat omnis, aliquid illum. Explicabo molestias perspiciatis modi beatae?</p>
+              <button class="btn btn-primary">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg  mt-5 mx-auto d-block px-5" href="rooms.html"><a href="rooms.html" class="text-light text-decoration-none px-3">See More</a></button>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+
+    <section class="section-padding hidden" id="gallery">
+        <div class="container">
+          <div class="row py-5 text-center" id="heading">
+            <h1>Visualize Your Next Stay with Us</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <img src="bedroom2.webp" class="img-thumbnail" onclick="openModal();currentSlide(1)">
+            </div>
+            <div class="col-md-4">
+              <img src="bedroom5.jpg" class="img-thumbnail" onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="col-md-4">
+              <img src="swimingpool.jpg" class="img-thumbnail" onclick="openModal();currentSlide(3)">
+            </div>
+          </div>
+          <div class="row g-4 mt-1">
+            <div class="col-md-4">
+              <img src="welcomhotel-bhubaneswar.jpg" class="img-thumbnail" onclick="openModal();currentSlide(4)">
+            </div>
+            <div class="col-md-4">
+              <img src="bedroom6.jpg" class="img-thumbnail" onclick="openModal();currentSlide(5)">
+            </div>
+            <div class="col-md-4">
+              <img src="bedroom7.jpg" class="img-thumbnail" onclick="openModal();currentSlide(6)">
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg  mt-5 mx-auto d-block px-5">See More</button>
+          <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+              <div class="mySlides">
+                <img src="bedroom2.webp">
+              </div>
+              <div class="mySlides">
+                <img src="bedroom5.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="swimingpool.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="welcomhotel-bhubaneswar.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="bedroom6.jpg">
+              </div>
+              <div class="mySlides">
+                <img src="bedroom7.jpg">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+  <!-- review section -->
+
+  <section class="section-padding hidden" id="review">
+    <div class="container">
+      <div class="row pb-5 text-center" id="heading">
+        <h1>Customer Reviews</h1>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 gy-5" id="review-row">
+        <div class="col">
+          <div class="card">
+            <img src="user2.jfif" class="" alt="...">
+            <div class="card-body mt-5 text-center">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              <h5 class="py-1">Chloe Joseph</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nemo?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="user1.jfif" class="" alt="...">
+            <div class="card-body mt-5 text-center">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              <h5 class="py-1">Billy Butcher</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nemo?</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="user3.jfif" class="" alt="...">
+            <div class="card-body mt-5 text-center">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              <h5 class="py-1">Emma</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, nemo?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact us -->
+
+  <section class="section-padding mx-1 hidden" id="contact-section">
+    <div class="container">
+      <div class="row py-5 text-center " id="heading">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="row" id="contact-row">
+        <div class="col col-md-6" id="form-col">
+          <h2 class="py-4 px-2">Send us a message</h2>
+          <form action="">
+            <div class="form-floating mb-5 px-2">
+              <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+              <label for="name">Name</label>
+            </div>
+            <div class="form-floating mb-5 px-2">
+              <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating mb-5 px-2">
+              <textarea class="form-control" id="message" placeholder="Enter Your Message"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <div class="btn btn-primary ms-2 mb-4">Send Message</div>
+          </form>
+        </div>
+        <div class="col col-md-6 col-12  text-light p-5" id="address-block">
+          <h2>Get in touch</h2>
+          <p class="mb-5">We're open for any suggestions or just to have a chat.</p>
+          <div class="d-flex justify-content-center align-items-center mb-5">
+            <i class="fa-solid fa-location-dot px-4"></i>
+            <span>Address: 8/19, Grants Building, Arthur Bunder Road, Colaba</span>
+          </div>
+          <div class="d-flex justify-content-start align-items-center mb-5">
+            <i class="fa-solid fa-phone px-4"></i>
+            <span>Phone: 99453278911</span>
+          </div>
+          <div class="d-flex justify-content-start align-items-center mb-5">
+            <i class="fa-solid fa-envelope px-4"></i>
+            <span>Email: hotel@gmail.com</span>
+          </div>
+          <div class="d-flex justify-content-start align-items-center mb-5">
+            <p class="ms-4">Follow us on:</p>
+            <div class="d-flex justify-content-center ms-2 mb-3">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram px-4"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- faq -->
+
+  <section class="faq-container section-padding">
+    <div class="container" id="faq-box">
+      <div class="row py-5 text-center " id="heading">
+        <h1>Frequently Asked Questions</h1>
+      </div>
+      <div class="faq-one">
+          <h3 class="faq-page">Do you offer shuttle service to and from the airport?</h3>
+          <div class="faq-body">
+              <p>Yes, we do offer shuttle service to and from the airport. Please contact the hotel directly to make arrangements.</p>
+          </div>
+      </div>
+      <hr class="hr-line">
+      <div class="faq-two">
+          <h3 class="faq-page">Do you have a pet policy?</h3>
+          <div class="faq-body">
+              <p>Yes, we do have a pet policy. Pets are allowed in specific rooms, subject to availability. A fee may apply. Please contact the hotel directly for more information.</p>
+          </div>
+      </div>
+      <hr class="hr-line">
+      <div class="faq-three">
+         <h3 class="faq-page">Do you offer on-site parking?</h3>
+          <div class="faq-body">
+              <p>Yes, we do offer on-site parking for our guests.</p>
+          </div>
+      </div>
+    </div>
+    
+</section>
+
+
+
+  <!-- footer -->
+
+  <footer class="bg-dark text-light p-4">
+    <p class="text-center text-muted small">Copyrights © Acehotel 2023</p>
+  </footer>
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
